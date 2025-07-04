@@ -79,7 +79,7 @@ def rag_pipeline():
     from operator import itemgetter
 
     # RAG
-    template = """Answer the following question based on this context:
+    template = """Answer the following question based on this context and if there is no answer in context, say "there is no answer based on document":
 
     {context}
 
@@ -117,3 +117,4 @@ if __name__ == "__main__":
     
     # Start the server
     rag_pipeline()
+    
